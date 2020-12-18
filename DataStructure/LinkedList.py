@@ -11,3 +11,4 @@ class LinkedList:
 list1 = LinkedList()
 list1.head = Node(10);
 
+list1.listprint()
