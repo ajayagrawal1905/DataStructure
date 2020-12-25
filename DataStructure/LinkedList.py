@@ -1,3 +1,9 @@
+''''
+Author Name : Ajay Manoj Agrawal
+Github Link : https://github.com/ajayagrawal1905
+Date : 25-12-2020
+'''
+
 class Node:
     def __init__(self, data=None,next=None):
         self.data = data
