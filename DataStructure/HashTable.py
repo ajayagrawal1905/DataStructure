@@ -23,10 +23,15 @@ class HashTable:
         h = self.get_hash(key)
         return self.arr[h]
 
+    def __delitem__(self, key):
+        h = self.get_hash(key)
+        self.arr[h] = None
+
 t = HashTable()
 t['ajay'] = 1905
 t['rohit'] = 1507
 t['sanket'] = 1010
-print(t.get_hash('rohit'))
-print(t.get_hash('sanket'))
-print(t['sanket'])
+print(t['rohit'])
+print(t['ajay'])
+del t['ajay']
+print('ajay :',t['ajay'])
