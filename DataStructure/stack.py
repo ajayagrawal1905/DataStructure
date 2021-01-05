@@ -1,3 +1,9 @@
+'''
+Author Name : Ajay Manoj Agrawal
+Github Link : https://github.com/ajayagrawal1905
+Date : 05-01-2021 Tuesday
+
+'''
 from collections import deque
 
 class Stack:
@@ -21,9 +27,9 @@ class Stack:
         return len(self.container)
 
 st = Stack()
-st.push(3)
-st.push(5)
-st.push(6)
+st.push("ajay")
+st.push("sanket")
+st.push("rohit")
 print(st.peek())
 print(st.pop())
 print(st.pop())
