@@ -1,6 +1,6 @@
 ''''
 Author Name : Ajay Manoj Agrawal
-Github Link : https://github.com/ajayagrawal1905
+Github Link : https://github.com/ajayagrawal1905/DataStructure/
 Date : 25-12-2020
 '''
 

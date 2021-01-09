@@ -1,6 +1,6 @@
 '''
 Author Name : Ajay Manoj Agrawal
-Github Link : https://github.com/ajayagrawal1905
+Github Link : https://github.com/ajayagrawal1905/DataStructure/
 Date : 05-01-2021 Tuesday
 
 '''
@@ -20,8 +20,8 @@ class TreeNode:
         while p:
             level += 1
             p = p.parent
-
         return level
+    
 
 
     def print_tree(self):
