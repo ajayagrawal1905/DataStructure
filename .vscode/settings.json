@@ -1,4 +1,4 @@
 {
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "black",
     "python.pythonPath": "C:\\Users\\Ajay\\AppData\\Local\\Enthought\\Canopy\\edm\\envs\\User\\python.exe"
 }

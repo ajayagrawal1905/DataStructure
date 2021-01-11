@@ -1,8 +1,8 @@
-''''
+"""
 Author Name : Ajay Manoj Agrawal
 Github Link : https://github.com/ajayagrawal1905/DataStructure/
 Date : 25-12-2020
-'''
+"""
 
 
 class Node:
@@ -45,7 +45,7 @@ class LinkedList:
         for data in data_list:
             self.insert_at_end(data)
 
-    def grt_lenght(self):
+    def get_length(self):
         count = 0
         itr = self.head
         while itr:
@@ -54,7 +54,7 @@ class LinkedList:
         return count
 
     def remove_at(self, index):
-        if index < 0 or index >= self.grt_lenght():
+        if index < 0 or index >= self.get_length():
             raise Exception("Invalid Index")
 
         if index == 0:
@@ -71,7 +71,7 @@ class LinkedList:
             count += 1
 
     def insert_at(self, index, data):
-        if index < 0 or index >= self.grt_lenght():
+        if index < 0 or index >= self.get_length():
             raise Exception("Invalid Index")
 
         if index == 0:
@@ -90,18 +90,44 @@ class LinkedList:
             count += 1
             print(count)
 
+    def insert_after_value(self, data_after, data_to_insert):
+        # count = 1
+        # itr = self.head
+        # while itr:
+        #     node = str(itr.data)
+        #     itr = itr.next
+        #     print(data_after,str(itr.data))
+        #     if data_after == node:
+        #         count += 1
+        #         self.insert_at(count, data_to_insert)
+        count = 1
+        itr = self.head
+        if data_to_insert == str(self.head):
+
+        # Search for first occurance of data_after value in linked list
+        # Now insert data_to_insert after data_after node
+
+    # def remove_by_value(self, data):
+    #     # Remove first node that contains data
+
 
 if __name__ == '__main__':
     ll = LinkedList()
-    data_list = ["apples", "Mango", "Orange", "Lichi"]
-    ll.insert_values(data_list)
-    print("length:", ll.grt_lenght())
+    ll.insert_values(["banana", "mango", "grapes", "orange"])
+    ll.print()
+    ll.insert_after_value("grapes", "apple")  # insert apple after mango
+    ll.print()
+    # ll = LinkedList()
+    # data_list = ["apples", "Mango", "Orange", "Lichi"]
+    # ll.insert_values(data_list)
+    # print("length:", ll.get_length())
+    # ll.insert_after_value("mango","apple") # insert apple after mango
+    # ll.print()
     # ll.remove_at(10)
     # ll.insert_at_end(30)
     # ll.insert_at_begining(10)
     # ll.insert_at_begining(15)
     # ll.insert_at_end(40)
     # ll.insert_at_end(234567)
-    ll.insert_at(0, "ajay")
-    ll.insert_at(3, "Rohit")
-    ll.print()
+    # ll.insert_at(0, "ajay")
+    # ll.insert_at(3, "Rohit")
