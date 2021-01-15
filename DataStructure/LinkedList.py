@@ -90,22 +90,16 @@ class LinkedList:
             count += 1
             print(count)
 
-    def insert_after_value(self, data_after, data_to_insert):
-        # count = 1
-        # itr = self.head
-        # while itr:
-        #     node = str(itr.data)
-        #     itr = itr.next
-        #     print(data_after,str(itr.data))
-        #     if data_after == node:
-        #         count += 1
-        #         self.insert_at(count, data_to_insert)
-        count = 1
-        itr = self.head
-        if data_to_insert == str(self.head):
+    # def insert_after_value(self, data_after, data_to_insert):
+    #     count = 1
+    #     itr = self.head
+    #     while itr:
+    #         count+=1
+    #         if data_after == itr.next:
+    #             count += 1
+    #             self.insert_at(count, data_to_insert)
 
-        # Search for first occurance of data_after value in linked list
-        # Now insert data_to_insert after data_after node
+
 
     # def remove_by_value(self, data):
     #     # Remove first node that contains data
@@ -115,8 +109,8 @@ if __name__ == '__main__':
     ll = LinkedList()
     ll.insert_values(["banana", "mango", "grapes", "orange"])
     ll.print()
-    ll.insert_after_value("grapes", "apple")  # insert apple after mango
-    ll.print()
+    # ll.insert_after_value("grapes", "apple")  # insert apple after mango
+    # ll.print()
     # ll = LinkedList()
     # data_list = ["apples", "Mango", "Orange", "Lichi"]
     # ll.insert_values(data_list)
